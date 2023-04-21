@@ -1243,6 +1243,7 @@ a {
     background-color: transparent;
     border: none;
     padding: 0;
+    cursor: pointer;
 }
 
 .menu-container {
@@ -1271,12 +1272,32 @@ a {
 }
 
 .mobile-menu {
-    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    padding-left: 40;
+    padding-top: 80;
     margin: 0;
     list-style: none;
 }
 
+.mobile-menu-list {
+    padding-left: 40;
+    padding-top: 80;
+}
+
 .mobile-menu .link {
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+
+    color: #2E2F42;
     display: block;
     padding: 10px;
     color: #2E2F42;
