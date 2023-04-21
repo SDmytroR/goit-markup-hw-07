@@ -38,6 +38,31 @@
     background-color: #ffffff;
 }
 
+.container {
+    min-width: 320 px;
+    max-width: 428px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-right: auto;
+    margin-left: auto;
+
+    outline: 2px solid red;
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        max-width: 736px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .container {
+        max-width: 1158px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
 /* Reset */
 
 h1,
@@ -81,14 +106,6 @@ a {
 .header-container {
     display: flex;
     align-items: center;
-}
-
-.container {
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
 }
 
 /* nav */
@@ -331,6 +348,12 @@ a {
     padding-bottom: 120px;
 }
 
+@media only screen and (max-width: 1199px) {
+    .projects {
+        display: none;
+    }
+}
+
 /* h2 */
 .projects-team {
     margin-bottom: 72px;
@@ -358,9 +381,16 @@ a {
 */
 /* section */
 .team {
-    padding-bottom: 120px;
-    padding-top: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
     background-color: #F4F4FD;
+}
+
+@media only screen and (min-width: 1200px) {
+    .team {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
 }
 
 /* h2 */
@@ -379,10 +409,23 @@ a {
 
 /* ul */
 .team-list {
-    gap: 24px;
-    padding-top: 72px;
+    gap: 72px;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media only screen and (min-width: 768px) {
+    .team-list {
+        gap: 64px 24px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .team-list {
+        gap: 24px;
+        justify-content: space-between;
+    }
 }
 
 /* li */
@@ -465,9 +508,15 @@ a {
 */
 /* section */
 .customers {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
 
+@media only screen and (min-width: 1200px) {
+    .customers {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
 }
 
 /* h2 */
@@ -490,7 +539,15 @@ a {
 /* ul */
 .customers-list {
     display: flex;
-    gap: 24px
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 72px 16px;
+}
+
+@media only screen and (min-width: 768px) {
+    .customers-list {
+        gap: 72px 24px;
+    }
 }
 
 /* a */
