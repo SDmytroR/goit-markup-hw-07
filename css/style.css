@@ -702,6 +702,12 @@ a {
     gap: 72px 16px;
 }
 
+@media only screen and (max-width: 767px) {
+    .customers-list {
+        gap: 72px 60px;
+    }
+}
+
 @media only screen and (min-width: 768px) {
     .customers-list {
         gap: 72px 24px;
@@ -721,13 +727,6 @@ a {
 
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-@media only screen and (max-width: 767px) {
-    .customers-link {
-        width: 168px;
-        height: 88px;
-    }
 }
 
 @media only screen and (min-width: 768px) {
