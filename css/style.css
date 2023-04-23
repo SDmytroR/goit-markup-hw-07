@@ -720,13 +720,31 @@ a {
     }
 }
 
+/* li */
+.customers-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 190px;
+    max-height: 88px;
+}
+
+@media only screen and (min-width: 428px) {
+    .customers-item {
+        flex-basis: calc((100% - 16px) / 3);
+    }
+}
+
+
 /* a */
 .customers-link {
     display: flex;
     justify-content: center;
+    align-items: center;
+
     max-width: 190px;
     max-height: 88px;
-    align-items: center;
     border: 1px solid #8E8F99;
     border-radius: 4px;
     color: #8e8f99;
