@@ -30,6 +30,8 @@
     --accent-color: #2E2F42;
     --primary-font: 'Roboto', sans-serif;
     --secondary-font: 'Raleway', sans-serif;
+    /* --indent: 16px;
+    --item: 2; */
 }
 
 .body {
@@ -721,9 +723,17 @@ a {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media only screen and (max-width: 767px) {
+    .customers-link {
+        width: 168px;
+        height: 88px;
+    }
+}
+
 @media only screen and (min-width: 768px) {
     .customers-link {
         width: 168px;
+        height: 88px;
     }
 }
 
@@ -737,6 +747,21 @@ a {
 .customers-icon {
     fill: currentColor;
 }
+
+/* *
+  |============================
+  | card set
+  |============================
+*/
+/* .card-set {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--indent);
+}
+
+.card-set-item {
+    flex-basis: calc((100% - var(--indent) * (var(--item) - 1)) / var(--item));
+} */
 
 /**
   |============================
@@ -954,6 +979,12 @@ a {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     background-color: transparent;
+}
+
+@media only screen and (min-width: 768px) {
+    .input-footer-email {
+        width: 264px;
+    }
 }
 
 /* button */
@@ -1440,7 +1471,9 @@ a {
 
 .menu-container {
     padding-top: 80px;
+    padding-bottom: 40px;
     padding-left: 40px;
+    padding-right: 35px;
     top: 0;
     left: 0;
     width: 100vw;
@@ -1465,8 +1498,8 @@ a {
 
     margin-bottom: auto;
 
-    /* display: flex;
-    flex-direction: column; */
+    display: flex;
+    flex-direction: column;
     gap: 40px;
 }
 
